@@ -38,6 +38,11 @@ public class Paciente {
         }
     }
 
+    public void recalcularClasificacion() {
+        this.clasificacion = calcularClasificacion();
+    }
+
+    // Metodos get y set
     public int getId() {
         return id;
     }
@@ -46,7 +51,62 @@ public class Paciente {
         this.id = id;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getMotivo() {
+        return motivo;
+    }
+
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
+    }
+
+    public double getTemperatura() {
+        return temperatura;
+    }
+
+    public void setTemperatura(double temperatura) {
+        this.temperatura = temperatura;
+        recalcularClasificacion();
+    }
+
+    public int getFrecuenciaCardiaca() {
+        return frecuenciaCardiaca;
+    }
+
+    public void setFrecuenciaCardiaca(int frecuenciaCardiaca) {
+        this.frecuenciaCardiaca = frecuenciaCardiaca;
+        recalcularClasificacion();
+    }
+
+    public int getNivelDolor() {
+        return nivelDolor;
+    }
+
+    public void setNivelDolor(int nivelDolor) {
+        this.nivelDolor = nivelDolor;
+        recalcularClasificacion();
+    }
+
     public String getClasificacion() {
         return clasificacion;
+    }
+
+    public void setClasificacion(String clasificacion) {
+        this.clasificacion = clasificacion;
     }
 }
