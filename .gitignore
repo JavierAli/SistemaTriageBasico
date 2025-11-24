@@ -1,0 +1,16 @@
+# Archivos compilados
+*.class
+bin/
+build/
+dist/
+
+# Base de datos
+triageDB/
+derby.log
+
+# NetBeans
+nbproject/private/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
